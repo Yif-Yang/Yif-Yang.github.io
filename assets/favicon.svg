@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Yifan Yang monogram">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111a2b"/>
+      <stop offset="1" stop-color="#070b14"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="15" y1="15" x2="50" y2="49" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5de4c7"/>
+      <stop offset="0.52" stop-color="#63a4ff"/>
+      <stop offset="1" stop-color="#9b8cff"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="17" fill="url(#bg)" stroke="#ffffff" stroke-opacity=".14" stroke-width="2"/>
+  <path d="M13.5 16.5h8l10.4 14.1 10.2-14.1h8L35.7 36.4v11.1h-7.6V36.4L13.5 16.5Z" fill="url(#ink)"/>
+  <circle cx="48.5" cy="46.5" r="3.5" fill="#f4c76b"/>
+</svg>

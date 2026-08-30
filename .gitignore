@@ -1,0 +1,16 @@
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# Local tooling and generated previews
+node_modules/
+.jekyll-cache/
+_site/
+*.log
+
+# Lossless source captures kept locally; the site ships optimized WebP assets.
+assets/images/projects/*.png

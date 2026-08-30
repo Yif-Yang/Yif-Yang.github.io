@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b14">
+  <meta name="description" content="Yifan Yang is a Senior Researcher at Microsoft Research Asia working on self-evolving agents, multimodal foundation models, and visual generation.">
+  <meta name="author" content="Yifan Yang">
+  <meta property="og:title" content="Yifan Yang — Multimodal Intelligence & Self-Evolving Agents">
+  <meta property="og:description" content="Research, open-source systems, papers, talks, and academic service by Yifan Yang.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yif-yang.github.io/">
+  <meta property="og:image" content="https://yif-yang.github.io/assets/images/portrait.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Yifan Yang — Senior Researcher, Microsoft Research Asia</title>
+  <link rel="canonical" href="https://yif-yang.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      const savedTheme = localStorage.getItem('yifan-theme');
+      if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+    } catch (_) {}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yifan Yang",
+    "url": "https://yif-yang.github.io/",
+    "image": "https://yif-yang.github.io/assets/images/portrait.webp",
+    "jobTitle": "Senior Researcher",
+    "worksFor": {"@type": "Organization", "name": "Microsoft Research Asia"},
+    "email": "mailto:yifyang29@gmail.com",
+    "sameAs": [
+      "https://github.com/Yif-Yang",
+      "https://scholar.google.com/citations?hl=en&user=u6QK7AkAAAAJ",
+      "https://www.microsoft.com/en-us/research/people/yifanyang/"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="research-field" aria-hidden="true"></canvas>
+  <div class="pointer-glow" aria-hidden="true"></div>
+  <div class="page-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header" data-header>
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Yifan Yang, home">
+        <span class="brand-mark">YY</span>
+        <span class="brand-copy"><strong>Yifan Yang</strong><small>Research / Systems</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span><span class="sr-only">Open menu</span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#research">Research</a>
+        <a href="#work">Work</a>
+        <a href="#news">News</a>
+        <a href="#about">About</a>
+        <a href="#service">Service</a>
+        <a class="nav-external" href="https://scholar.google.com/citations?hl=en&amp;user=u6QK7AkAAAAJ" target="_blank" rel="noreferrer">Scholar <span aria-hidden="true">↗</span></a>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Change theme">
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></svg>
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8a8.5 8.5 0 1 0 11.3 11.3Z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="status-dot" aria-hidden="true"></span> Senior Researcher · Shanghai</p>
+          <h1 id="hero-title" class="hero-title">
+            <span class="title-line"><span>Yifan</span></span>
+            <span class="title-line title-line--accent"><span>Yang.</span></span>
+          </h1>
+          <p class="hero-role reveal">Microsoft Research Asia <span>·</span> Vision Computing Group</p>
+          <p class="hero-thesis reveal">I build multimodal systems that <em>learn</em>, <em>create</em>, and <em>improve themselves</em>—then turn the strongest ideas into open research and useful products.</p>
+          <div class="hero-actions reveal">
+            <a class="button button--primary" href="#work">Explore the work <span aria-hidden="true">↓</span></a>
+            <a class="button button--ghost" href="https://github.com/Yif-Yang" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="assets/docs/Yifan_Yang_CV.pdf" target="_blank" rel="noreferrer">Curriculum vitae <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <aside class="research-orbit reveal" aria-label="Research areas">
+          <div class="orbit-ring orbit-ring--outer" aria-hidden="true"></div>
+          <div class="orbit-ring orbit-ring--inner" aria-hidden="true"></div>
+          <div class="portrait-frame">
+            <img src="assets/images/portrait.webp" width="960" height="960" alt="Portrait of Yifan Yang" fetchpriority="high">
+            <div class="portrait-scan" aria-hidden="true"></div>
+          </div>
+          <a class="orbit-node orbit-node--one" href="#work" data-topic-jump="agents"><span>01</span> Agent<br>evolution</a>
+          <a class="orbit-node orbit-node--two" href="#work" data-topic-jump="multimodal"><span>02</span> Multimodal<br>learning</a>
+          <a class="orbit-node orbit-node--three" href="#work" data-topic-jump="generation"><span>03</span> Visual<br>generation</a>
+          <a class="orbit-node orbit-node--four" href="#work" data-topic-jump="video"><span>04</span> Video &amp;<br>world models</a>
+          <span class="orbit-coordinate">31.23°N / 121.47°E</span>
+        </aside>
+      </div>
+
+      <div class="impact-strip reveal" role="group" aria-label="Research impact snapshot">
+        <div class="metric"><strong data-count="40" data-suffix="+">40+</strong><span>peer-reviewed papers</span></div>
+        <div class="metric"><strong data-count="18765" data-compact="true">18.8K</strong><span>GitHub stars<sup>1</sup></span></div>
+        <div class="metric"><strong data-count="300" data-suffix="K+">300K+</strong><span>model downloads<sup>2</sup></span></div>
+        <div class="metric"><strong data-count="10" data-suffix="+">10+</strong><span>international patents</span></div>
+        <p class="metric-note"><sup>1</sup> Public repositories linked in this portfolio, Aug. 30, 2026. <sup>2</sup> LLM2CLIP model collection.</p>
+      </div>
+    </section>
+
+    <section class="research section-shell" id="research" aria-labelledby="research-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / Research map</p>
+        <h2 id="research-title">Research that <em>compounds.</em></h2>
+        <p>I work across the stack—from representation and generation to the mechanisms that let agents turn experience into better future behavior.</p>
+      </div>
+      <div class="theme-grid">
+        <a class="theme-card reveal" href="#work" data-topic-jump="agents">
+          <span class="theme-index">A / 01</span>
+          <h3>Self-evolving agents</h3>
+          <p>Training external agent behavior through reusable knowledge, iterative optimization, and executable resources.</p>
+          <span class="theme-arrow" aria-hidden="true">↘</span>
+        </a>
+        <a class="theme-card reveal" href="#work" data-topic-jump="multimodal">
+          <span class="theme-index">M / 02</span>
+          <h3>Multimodal intelligence</h3>
+          <p>Richer cross-modal representations, efficient visual reasoning, grounding, and model adaptation.</p>
+          <span class="theme-arrow" aria-hidden="true">↘</span>
+        </a>
+        <a class="theme-card reveal" href="#work" data-topic-jump="generation">
+          <span class="theme-index">G / 03</span>
+          <h3>Visual generation</h3>
+          <p>Controllable image, video, audio-visual, and commercial content generation with reasoning in the loop.</p>
+          <span class="theme-arrow" aria-hidden="true">↘</span>
+        </a>
+        <a class="theme-card reveal" href="#work" data-topic-jump="video">
+          <span class="theme-index">V / 04</span>
+          <h3>Video &amp; world models</h3>
+          <p>3D-consistent video worlds, long-video understanding, and bandwidth-efficient immersive media.</p>
+          <span class="theme-arrow" aria-hidden="true">↘</span>
+        </a>
+        <a class="theme-card reveal" href="#work" data-topic-jump="structured">
+          <span class="theme-index">S / 05</span>
+          <h3>Structured visual reasoning</h3>
+          <p>Models and benchmarks for scientific figures, engineering diagrams, geometry, and professional design.</p>
+          <span class="theme-arrow" aria-hidden="true">↘</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="work section-shell" id="work" aria-labelledby="work-title">
+      <div class="section-heading section-heading--split reveal">
+        <div>
+          <p class="eyebrow">02 / Research portfolio</p>
+          <h2 id="work-title">Project by <em>project.</em></h2>
+        </div>
+        <div class="section-intro">
+          <p>A visual index of my corresponding-author research, plus one selected led contribution. Every resource below points to a public paper, repository, model, dataset, or project page.</p>
+          <p class="legend"><strong>†</strong> Corresponding author on the cited paper version. Unreleased code is never presented as public.</p>
+        </div>
+      </div>
+
+      <div class="work-toolbar reveal" role="group" aria-label="Filter research projects">
+        <div class="filter-list" role="group" aria-label="Research topic">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All <span>20</span></button>
+          <button class="filter-button" type="button" data-filter="agents" aria-pressed="false">Agents</button>
+          <button class="filter-button" type="button" data-filter="multimodal" aria-pressed="false">Multimodal</button>
+          <button class="filter-button" type="button" data-filter="generation" aria-pressed="false">Generation</button>
+          <button class="filter-button" type="button" data-filter="video" aria-pressed="false">Video / worlds</button>
+          <button class="filter-button" type="button" data-filter="structured" aria-pressed="false">Structured</button>
+        </div>
+        <p class="result-count" aria-live="polite"><span data-result-count>20</span> projects shown</p>
+      </div>
+
+      <div class="project-grid" data-project-grid>
+        <article class="project-card project-card--feature reveal" data-topics="agents" id="skillopt">
+          <figure class="project-media">
+            <img src="assets/images/projects/skillopt.webp" width="1275" height="634" alt="SkillOpt optimization loop showing rollouts, text edits, validation, and slow updates" loading="lazy">
+            <figcaption>SkillOpt · system overview</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue venue--accent">arXiv 2026</span><span>Self-evolving agents</span><span class="repo-stars">★ 16.5K</span></div>
+            <h3>SkillOpt: Executive Strategy for Self-Evolving Agent Skills</h3>
+            <p class="authors"><strong>Yifan Yang<sup>†</sup></strong>, Ziyang Gong, Weiquan Huang, Qihao Yang, Ziwei Zhou, et al.</p>
+            <p class="project-summary">A controllable text-space optimizer that trains reusable skills as external state for a frozen agent. Scored trajectories become bounded edits, and validation gates keep only changes that measurably improve behavior.</p>
+            <div class="project-evidence"><span>Best or tied-best in 52 / 52 settings</span><span>Zero extra model calls at deployment</span></div>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p><strong>Problem.</strong> One-shot or loosely self-revised skills do not behave like reliable optimization.</p><p><strong>Approach.</strong> SkillOpt adds a textual learning rate, rejected-edit memory, held-out validation, and epoch-wise slow/meta updates.</p><p><strong>Result.</strong> It improves across six benchmarks, seven target models, and direct-chat, Codex, and Claude Code harnesses, with strong cross-model and cross-harness transfer.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2605.23904" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/microsoft/SkillOpt" target="_blank" rel="noreferrer">Code</a>
+              <a href="https://microsoft.github.io/SkillOpt/" target="_blank" rel="noreferrer">Project</a>
+              <a href="https://www.microsoft.com/en-us/research/blog/skillopt-agent-skills-as-trainable-parameters/" target="_blank" rel="noreferrer">MSR blog</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card project-card--feature reveal" data-topics="multimodal" id="llm2clip">
+          <figure class="project-media">
+            <img src="assets/images/projects/llm2clip.webp" width="728" height="572" alt="LLM2CLIP architecture aligning an LLM text encoder with visual representations" loading="lazy">
+            <figcaption>LLM2CLIP · representation pipeline</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue venue--award">AAAI 2026</span><span>Outstanding Paper</span><span class="repo-stars">★ 687</span></div>
+            <h3>LLM2CLIP: Powerful Language Model Unlocks Richer Cross-Modality Representation</h3>
+            <p class="authors">Weiquan Huang, Aoqi Wu, <strong>Yifan Yang<sup>†</sup></strong>, et al.</p>
+            <p class="project-summary">LLM2CLIP turns a large language model into a stronger textual teacher for contrastive vision-language learning, improving alignment for long, dense, and multilingual descriptions.</p>
+            <div class="project-evidence"><span>300K+ Hugging Face downloads</span><span>Transferred to Phi-4-mini visual pretraining</span></div>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p><strong>Idea.</strong> Caption-contrastive tuning unlocks semantic structure already present in an LLM, then distills it into a practical CLIP-style representation space.</p><p><strong>Impact.</strong> The work received the AAAI 2026 Outstanding Paper Award and a WAIC 2026 Youth Outstanding Paper Nomination Award; released models have passed 300K cumulative downloads.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2411.04997" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/microsoft/LLM2CLIP" target="_blank" rel="noreferrer">Code</a>
+              <a href="https://microsoft.github.io/LLM2CLIP/" target="_blank" rel="noreferrer">Project</a>
+              <a href="https://huggingface.co/collections/microsoft/llm2clip-672323a266173cfa40b32d4c" target="_blank" rel="noreferrer">Models</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card project-card--feature reveal" data-topics="generation video" id="world-r1">
+          <figure class="project-media">
+            <img src="assets/images/projects/world-r1.webp" width="1400" height="730" alt="World-R1 generated video examples with controlled camera motion and 3D consistency" loading="lazy">
+            <figcaption>World-R1 · 3D-consistent generation</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue">ICML 2026</span><span>Video world models</span><span class="repo-stars">★ 423</span></div>
+            <h3>World-R1: Reinforcing 3D Constraints for Text-to-Video Generation</h3>
+            <p class="authors">Weijie Wang, Xiaoxuan He, Youping Gu, <strong>Yifan Yang<sup>†</sup></strong>, et al.</p>
+            <p class="project-summary">World-R1 aligns video generation with 3D constraints through reinforcement learning, improving geometric consistency and camera control without changing the underlying video-model architecture.</p>
+            <div class="project-evidence"><span>3D-aware rewards</span><span>Periodic decoupled training</span></div>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p><strong>Approach.</strong> A purpose-built text corpus, camera-aware initialization, feedback from 3D foundation models and VLMs, and Flow-GRPO jointly encourage structural coherence.</p><p><strong>Result.</strong> A periodic training schedule balances rigid geometry with fluid dynamics while preserving the visual quality of the base generator.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2604.24764" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/microsoft/World-R1" target="_blank" rel="noreferrer">Code</a>
+              <a href="https://microsoft.github.io/World-R1/" target="_blank" rel="noreferrer">Project</a>
+              <a href="https://huggingface.co/datasets/microsoft/World-R1" target="_blank" rel="noreferrer">Dataset</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-topics="agents" id="resource2skill">
+          <figure class="project-media">
+            <img src="assets/images/projects/resource2skill.webp" width="1400" height="684" alt="Resource2Skill pipeline from multimodal resources to an executable skill wiki" loading="lazy">
+            <figcaption>RESOURCE2SKILL · distillation pipeline</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue">arXiv 2026</span><span>Agent learning</span><span class="repo-stars">★ 506</span></div>
+            <h3>RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources</h3>
+            <p class="authors">Yijia Fan, Zonglin Di, Zimo Wen, <strong>Yifan Yang<sup>†</sup></strong>, et al.</p>
+            <p class="project-summary">Distills tutorials, videos, repositories, articles, and reference artifacts into a hierarchical multimodal Skill Wiki that software agents can retrieve, compose, and execute.</p>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p>Each skill preserves structured text, code, visual examples, metadata, and provenance. Across seven authoring domains, the framework improves average score by 11.9 points and wins 26 of 28 main model–domain cells.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2606.29538" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/microsoft/Resource2Skill" target="_blank" rel="noreferrer">Code</a>
+              <a href="https://microsoft.github.io/Resource2Skill/" target="_blank" rel="noreferrer">Project</a>
+              <a href="https://huggingface.co/datasets/microsoft/RESOURCE2SKILL" target="_blank" rel="noreferrer">Data</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-topics="agents" id="skilllens">
+          <figure class="project-media">
+            <img src="assets/images/projects/skilllens.webp" width="1400" height="532" alt="SkillLens lifecycle from experience generation through skill extraction to consumption" loading="lazy">
+            <figcaption>SkillLens · full skill lifecycle</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue">arXiv 2026</span><span>Agent evaluation</span><span class="repo-stars">★ 159</span></div>
+            <h3>From Raw Experience to Skill Consumption: A Systematic Study of Model-Generated Agent Skills</h3>
+            <p class="authors">Zisu Huang, Jingwen Xu, <strong>Yifan Yang<sup>†</sup></strong>, Ziyang Gong, Qihao Yang, et al.</p>
+            <p class="project-summary">SkillLens studies model-generated agent skills across the complete lifecycle: experience generation, skill extraction, and consumption by a target agent.</p>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p>The study exposes non-trivial negative transfer and shows that strong skill extractors are not necessarily strong consumers. A utility-grounded meta-skill then improves quality across domains while reducing harmful transfer.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2605.23899" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/microsoft/SkillLens" target="_blank" rel="noreferrer">Code</a>
+              <a href="https://microsoft.github.io/SkillLens/" target="_blank" rel="noreferrer">Project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-topics="structured multimodal" id="omnisch">
+          <figure class="project-media">
+            <img src="assets/images/projects/omnisch.webp" width="1400" height="544" alt="OmniSch benchmark examples for PCB schematic grounding, graph, geometry, and agentic reasoning" loading="lazy">
+            <figcaption>OmniSch · structured diagram tasks</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue">ECCV 2026</span><span>Engineering diagrams</span></div>
+            <h3>OmniSch: A Multimodal PCB Schematic Benchmark For Structured Diagram Visual Reasoning</h3>
+            <p class="authors">Taiting Lu, Kaiyuan Lin, Yuxin Tian, …, <strong>Yifan Yang<sup>†</sup></strong>, et al.</p>
+            <p class="project-summary">The first comprehensive benchmark for converting PCB schematics into spatially weighted netlist graphs, spanning grounding, topology, geometry, and tool-augmented visual search.</p>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p>OmniSch contains 1,854 real-world diagrams, 109.9K grounded instances, and 423.4K semantic labels. Evaluation reveals persistent gaps in fine-grained grounding, global connectivity, and efficient visual exploration.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2604.00270" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/TaitingLu/IMG2SCH" target="_blank" rel="noreferrer">Code</a>
+              <a href="https://omnisch.com/" target="_blank" rel="noreferrer">Project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-topics="generation video" id="avgen-bench">
+          <figure class="project-media">
+            <img src="assets/images/projects/avgen-bench.webp" width="474" height="196" alt="AVGen-Bench comparison with multi-granular audio-video evaluation dimensions" loading="lazy">
+            <figcaption>AVGen-Bench · evaluation matrix</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue">ICML 2026</span><span>Audio-video generation</span><span class="repo-stars">★ 30</span></div>
+            <h3>AVGen-Bench: A Task-Driven Benchmark for Multi-Granular Evaluation of Text-to-Audio-Video Generation</h3>
+            <p class="authors">Ziwei Zhou, Zeyuan Lai, Rui Wang, <strong>Yifan Yang<sup>†</sup></strong>, et al.</p>
+            <p class="project-summary">A task-driven benchmark that evaluates jointly generated audio and video from low-level quality and synchronization to semantic alignment, physical plausibility, and holistic experience.</p>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p>The benchmark replaces a single aggregate score with fine-grained, task-oriented prompts and diagnostic dimensions, making it possible to see where modern audio-video systems actually succeed or fail.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2604.08540" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/microsoft/AVGen-Bench" target="_blank" rel="noreferrer">Code</a>
+              <a href="https://microsoft.github.io/AVGen-Bench/" target="_blank" rel="noreferrer">Project</a>
+              <a href="https://huggingface.co/datasets/microsoft/AVGen-Bench" target="_blank" rel="noreferrer">Dataset</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-topics="video multimodal" id="video-in-the-loop">
+          <figure class="project-media">
+            <img src="assets/images/projects/video-in-the-loop.webp" width="1400" height="724" alt="Video-in-the-Loop framework localizing temporal spans before high-resolution question answering" loading="lazy">
+            <figcaption>Video-in-the-Loop · span-aware reasoning</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue">ICML 2026</span><span>Long-video reasoning</span></div>
+            <h3>Video-in-the-Loop: Span-Grounded Long Video QA with Interleaved Reasoning</h3>
+            <p class="authors">Chendong Wang, Donglin Bai, <strong>Yifan Yang<sup>†</sup></strong>, et al.</p>
+            <p class="project-summary">A two-stage long-video QA system that first localizes relevant intervals, then reallocates a fixed visual-token budget to those spans for interpretable, efficient reasoning.</p>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p>Interleaved training couples temporal overlap with answer correctness, letting answer-level feedback improve localization. The method reports gains up to 8.6 points while using 50% fewer input frames.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2510.04022" target="_blank" rel="noreferrer">Paper</a>
+              <span class="resource-unavailable">Code not public</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-topics="structured multimodal" id="ic-footprint">
+          <figure class="project-media">
+            <img src="assets/images/projects/ic-footprint.webp" width="1400" height="322" alt="IC footprint geometry pipeline from mechanical drawing to pin locations and dimensions" loading="lazy">
+            <figcaption>LLM4-IC8K · geometry understanding</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue">ICML 2026</span><span>Geometric reasoning</span></div>
+            <h3>A Large Language Model Powered Integrated Circuit Footprint Geometry Understanding</h3>
+            <p class="authors">Yida Wang, Taiting Lu, Runze Liu, Lanqing Yang, <strong>Yifan Yang<sup>†</sup></strong>, et al.</p>
+            <p class="project-summary">LLM4-IC8K interprets mechanical drawings step by step—counting pins, recovering their centers, and estimating dimensions—to automate a demanding PCB design task.</p>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p>A synthetic-to-real two-stage recipe teaches fundamental geometry before adaptation to datasheets. The accompanying ICGeo8K dataset contains 8,608 labeled real and generated samples.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2508.03725" target="_blank" rel="noreferrer">Paper</a>
+              <span class="resource-unavailable">Code not public</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-topics="generation video" id="hitvideo">
+          <figure class="project-media">
+            <img src="assets/images/projects/hitvideo.webp" width="1400" height="796" alt="HiTVideo hierarchical video tokenizer with semantic and fine-detail codebooks" loading="lazy">
+            <figcaption>HiTVideo · hierarchical tokenization</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue">AAAI 2026</span><span>Autoregressive video</span></div>
+            <h3>HiTVideo: Hierarchical Tokenizers for Enhancing Text-to-Video Generation with Autoregressive Large Language Models</h3>
+            <p class="authors">Ziqin Zhou, <strong>Yifan Yang<sup>†</sup></strong>, Yuqing Yang, Tianyu He, et al.</p>
+            <p class="project-summary">A hierarchical 3D-causal tokenizer gives autoregressive video models compact semantic tokens at upper layers and fine spatiotemporal detail at lower layers.</p>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p>The hierarchy supports 8-second, 64-frame clips and reduces bits per pixel by about 70% versus baseline tokenizers while retaining competitive reconstruction quality.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2503.11513" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://ziqinzhou66.github.io/project/HiTVideo/" target="_blank" rel="noreferrer">Project</a>
+              <span class="resource-unavailable">Code coming soon</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-topics="video multimodal" id="vidguard-r1">
+          <figure class="project-media">
+            <img src="assets/images/projects/vidguard-r1.webp" width="1400" height="576" alt="VidGuard-R1 examples detecting generated videos and explaining physical inconsistencies" loading="lazy">
+            <figcaption>VidGuard-R1 · reasoning-first forensics</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue">ICLR 2026</span><span>Video forensics</span></div>
+            <h3>VidGuard-R1: AI-Generated Video Detection and Explanation via Reasoning MLLMs and RL</h3>
+            <p class="authors">Kyoungjun Park, <strong>Yifan Yang<sup>†</sup></strong>, Juheon Yi, Shicheng Zheng, et al.</p>
+            <p class="project-summary">A reasoning-first detector trained with GRPO to identify AI-generated video and articulate verifiable, physics-grounded evidence for its decision.</p>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p>Specialized temporal-stability and diffusion-complexity rewards guide exploration over reasoning paths. Training uses 140K challenging real/fake pairs and targets robust zero-shot detection.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2510.02282" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/kyoungjunpark/VidGuard-R1" target="_blank" rel="noreferrer">Code</a>
+              <a href="https://vidguard-r1.github.io/" target="_blank" rel="noreferrer">Project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-topics="generation structured" id="diffusion2">
+          <figure class="project-media">
+            <img src="assets/images/projects/diffusion2.webp" width="1400" height="488" alt="Diffusion squared predicts radio-frequency heatmaps from 3D environments" loading="lazy">
+            <figcaption>Diffusion² · RF field prediction</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue">Preprint 2025</span><span>3D + RF</span></div>
+            <h3>Diffusion²: Turning 3D Environments into Radio Frequency Heatmaps</h3>
+            <p class="authors">Kyoungjun Park, <strong>Yifan Yang<sup>†</sup></strong>, Changhan Ge, Lili Qiu, Shiqi Jiang</p>
+            <p class="project-summary">A diffusion model that reads 3D point clouds and predicts RF propagation from Wi-Fi through millimeter-wave frequencies, capturing absorption, reflection, and geometry.</p>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p>An RF-3D encoder and multi-scale embedding emulate how signal structure spreads through a scene. Across synthetic and real measurements, the model reports 1.9 dB error and 27× faster inference than prior methods.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2510.02274" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/kyoungjunpark/Diffusion2" target="_blank" rel="noreferrer">Code</a>
+              <a href="https://rfvision-project.github.io/" target="_blank" rel="noreferrer">Project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-topics="multimodal" id="zoomer">
+          <figure class="project-media">
+            <img src="assets/images/projects/zoomer.webp" width="1400" height="558" alt="Zoomer preserves global context while focusing token budget on important image details" loading="lazy">
+            <figcaption>Zoomer · adaptive visual prompting</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue">TMLR 2025</span><span>Efficient MLLMs</span></div>
+            <h3>Zoomer: Adaptive Image Focus Optimization for Black-box MLLM</h3>
+            <p class="authors">Jiaxu Qian, Chendong Wang, <strong>Yifan Yang<sup>†</sup></strong>, et al.</p>
+            <p class="project-summary">A model-agnostic visual prompting framework that preserves spatial context while allocating scarce visual tokens to semantically important regions.</p>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p>Prompt-aware emphasis, spatially preserving orchestration, and budget-aware allocation improve accuracy by up to 27% across commercial black-box MLLMs while cutting image-token use by up to 67%.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2505.00742" target="_blank" rel="noreferrer">Paper</a>
+              <span class="resource-unavailable">Code not public</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-topics="video" id="volut">
+          <figure class="project-media">
+            <img src="assets/images/projects/volut.webp" width="1400" height="1066" alt="VoLUT super-resolution for low-bandwidth volumetric video streaming" loading="lazy">
+            <figcaption>VoLUT · mobile volumetric SR</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue">MLSys 2025</span><span>Efficient streaming</span></div>
+            <h3>VoLUT: Efficient Volumetric Streaming Enhanced by LUT-Based Super-Resolution</h3>
+            <p class="authors">Chendong Wang, Anlan Zhang, <strong>Yifan Yang<sup>†</sup></strong>, et al.</p>
+            <p class="project-summary">Lookup-table super-resolution and adaptive bitrate control make high-quality 3D volumetric streaming practical on commodity mobile devices.</p>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p>VoLUT is designed for line-rate reconstruction with low compute. Evaluation reports 70% bandwidth savings and a 36.7% QoE improvement without compromising visual quality.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2502.12151" target="_blank" rel="noreferrer">Paper</a>
+              <span class="resource-unavailable">Code not public</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-topics="multimodal agents" id="lorasc">
+          <figure class="project-media">
+            <img src="assets/images/projects/lorasc.webp" width="1207" height="346" alt="LoRASC slow cascaded low-rank adaptation architecture" loading="lazy">
+            <figcaption>LoRASC · slow cascaded learning</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue">EMNLP 2024 Findings</span><span>Model adaptation</span></div>
+            <h3>Expressive and Generalizable Low-Rank Adaptation for Large Models via Slow Cascaded Learning</h3>
+            <p class="authors">Siwei Li, <strong>Yifan Yang<sup>†</sup></strong>, Yifei Shen, Fangyun Wei, Zongqing Lu, Lili Qiu, Yuqing Yang</p>
+            <p class="project-summary">A mixture-of-low-rank cascade that expands LoRA expressiveness, with slow-fast updates and noisy tuning to reduce overfitting and improve out-of-distribution robustness.</p>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p>The method preserves parameter-efficient training while improving stability across language, vision, and robustness benchmarks. The repository announced in the paper is not currently public, so no code link is shown.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2407.01491" target="_blank" rel="noreferrer">Paper</a>
+              <span class="resource-unavailable">Code not public</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-topics="agents structured generation" id="scidiagramedit">
+          <figure class="project-media">
+            <img src="assets/images/projects/scidiagramedit.webp" width="754" height="304" alt="SciDiagramEdit learns scientific figure editing from before and after paper revisions" loading="lazy">
+            <figcaption>SciDiagramEdit · revision-grounded editing</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue">Preprint 2026</span><span>Scientific diagrams</span></div>
+            <h3>SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions</h3>
+            <p class="authors">Yasheng Sun, Zezi Zeng, <strong>Yifan Yang<sup>†</sup></strong>, Chong Luo, Wenyi Wang, Ziwei Liu, Jürgen Schmidhuber</p>
+            <p class="project-summary">A benchmark and skill-evolution framework that learns instruction-driven scientific-figure editing from natural before/after revisions in arXiv papers.</p>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p>The agent edits vector primitives that users can inspect and co-edit. An agentic proposer evolves its specification from execution traces, progressively improving held-out editing accuracy over multiple epochs.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2607.15272" target="_blank" rel="noreferrer">Paper</a>
+              <span class="resource-unavailable">Code not public</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-topics="generation multimodal" id="reasongen-r1">
+          <figure class="project-media">
+            <img src="assets/images/projects/reasongen-r1.webp" width="1400" height="542" alt="ReasonGen-R1 plans image composition in text before autoregressive generation" loading="lazy">
+            <figcaption>ReasonGen-R1 · think, then render</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue">Preprint 2025</span><span>Reasoning + generation</span></div>
+            <h3>ReasonGen-R1: CoT for Autoregressive Image Generation Models through SFT and RL</h3>
+            <p class="authors">Yu Zhang, Yunqi Li, <strong>Yifan Yang<sup>†</sup></strong>, Rui Wang, Yuqing Yang, et al.</p>
+            <p class="project-summary">A two-stage framework that teaches an autoregressive image model to reason in text about layout, style, and composition before producing visual tokens.</p>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p>Supervised reasoning traces establish explicit planning; GRPO with vision-language rewards then improves output quality. The approach outperforms strong baselines on GenEval, DPG, and T2I evaluation.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2505.24875" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/Franklin-Zhang0/ReasonGen-R1" target="_blank" rel="noreferrer">Code</a>
+              <a href="https://reasongen-r1.github.io/" target="_blank" rel="noreferrer">Project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-topics="agents generation" id="mm-webagent">
+          <figure class="project-media">
+            <img src="assets/images/projects/mm-webagent.webp" width="1400" height="1120" alt="MM-WebAgent compares webpage generation through hierarchical planning and multimodal reflection" loading="lazy">
+            <figcaption>MM-WebAgent · plan, create, reflect</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue">arXiv 2026</span><span>Agentic creation</span><span class="repo-stars">★ 17</span></div>
+            <h3>MM-WebAgent: A Hierarchical Multimodal Web Agent for Webpage Generation</h3>
+            <p class="authors">Yan Li, Zezi Zeng, <strong>Yifan Yang<sup>†</sup></strong>, et al.</p>
+            <p class="project-summary">A hierarchical agent that coordinates AIGC tools through global planning, local generation, integration, and iterative multimodal reflection to build coherent webpages.</p>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p>The work introduces both an end-to-end generation framework and a multi-level benchmark. It improves multimodal element creation and visual integration over code-only and agentic baselines.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2604.15309" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/microsoft/MM-WebAgent" target="_blank" rel="noreferrer">Code</a>
+              <a href="https://microsoft.github.io/MM-WebAgent/" target="_blank" rel="noreferrer">Project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-topics="generation structured" id="bizgeneval">
+          <figure class="project-media">
+            <img src="assets/images/projects/bizgeneval.webp" width="1393" height="2020" alt="BizGenEval examples across slides, charts, webpages, posters, and scientific figures" loading="lazy">
+            <figcaption>BizGenEval · professional visual content</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue">arXiv 2026</span><span>Evaluation</span><span class="repo-stars">★ 22</span></div>
+            <h3>BizGenEval: A Systematic Benchmark for Commercial Visual Content Generation</h3>
+            <p class="authors">Yan Li, Zezi Zeng, Ziwei Zhou, Xin Gao, Muzhao Tian, <strong>Yifan Yang<sup>†</sup></strong>, et al.</p>
+            <p class="project-summary">A benchmark for the text, layout, binding, and knowledge constraints that make slides, charts, webpages, posters, and scientific figures useful—not merely attractive.</p>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p>BizGenEval defines 20 tasks, 400 curated prompts, and 8,000 human-verified checklist questions, benchmarking 26 image-generation systems on professional design requirements.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2603.25732" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/microsoft/BizGenEval" target="_blank" rel="noreferrer">Code</a>
+              <a href="https://microsoft.github.io/BizGenEval/" target="_blank" rel="noreferrer">Project</a>
+              <a href="https://huggingface.co/datasets/microsoft/BizGenEval" target="_blank" rel="noreferrer">Dataset</a>
+              <a href="https://huggingface.co/spaces/microsoft/BizGenEval-Leaderboard" target="_blank" rel="noreferrer">Leaderboard</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-topics="generation video" id="latent-spatial-memory">
+          <figure class="project-media">
+            <img src="assets/images/projects/latent-spatial-memory.webp" width="1400" height="840" alt="Latent Spatial Memory keeps persistent 3D scene state as latent tokens for video generation" loading="lazy">
+            <figcaption>Latent Spatial Memory · persistent 3D state</figcaption>
+          </figure>
+          <div class="project-body">
+            <div class="project-meta"><span class="venue venue--selected">Selected led work</span><span>Video world models</span><span class="repo-stars">★ 317</span></div>
+            <h3>Latent Spatial Memory for Video World Models</h3>
+            <p class="authors">Weijie Wang, Haoyu Zhao, <strong>Yifan Yang</strong>, Feng Chen, Zeyu Zhang, et al.</p>
+            <p class="project-summary">A persistent 3D scene memory represented directly as latent tokens, avoiding repeated RGB rendering and re-encoding as a video world evolves.</p>
+            <details class="research-note">
+              <summary>Research note <span aria-hidden="true">+</span></summary>
+              <div><p>The released Mirage system reports 10.57× faster generation and 55× lower 3D-cache memory. This card is included as a selected public led contribution; the current arXiv version does not mark corresponding authorship.</p></div>
+            </details>
+            <div class="resource-row">
+              <a href="https://arxiv.org/abs/2606.09828" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/microsoft/LatentSpatialMemory" target="_blank" rel="noreferrer">Code</a>
+              <a href="https://microsoft.github.io/LatentSpatialMemory/" target="_blank" rel="noreferrer">Project</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="empty-state" data-empty-state hidden>No projects match this filter.</p>
+    </section>
+
+    <section class="open-source section-shell" aria-labelledby="open-source-title">
+      <div class="source-panel reveal">
+        <div class="source-copy">
+          <p class="eyebrow">03 / Open research</p>
+          <h2 id="open-source-title">Ideas become more useful when people can <em>run them.</em></h2>
+          <p>The public repositories linked in this portfolio have attracted <strong>18,765 GitHub stars</strong> as of August 30, 2026. The goal is not only to publish results, but to ship code, models, data, and evaluation that make the work reproducible and extensible.</p>
+          <div class="source-actions">
+            <a class="button button--primary" href="https://github.com/Yif-Yang" target="_blank" rel="noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://huggingface.co/microsoft" target="_blank" rel="noreferrer">Microsoft on Hugging Face <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="source-viz" role="group" aria-label="Selected repository star counts">
+          <div class="star-row star-row--skillopt"><span>SkillOpt</span><i aria-hidden="true"></i><strong>16,493</strong></div>
+          <div class="star-row star-row--llm2clip"><span>LLM2CLIP</span><i aria-hidden="true"></i><strong>687</strong></div>
+          <div class="star-row star-row--resource2skill"><span>Resource2Skill</span><i aria-hidden="true"></i><strong>506</strong></div>
+          <div class="star-row star-row--world-r1"><span>World-R1</span><i aria-hidden="true"></i><strong>423</strong></div>
+          <div class="star-row star-row--latent-memory"><span>Latent Spatial Memory</span><i aria-hidden="true"></i><strong>317</strong></div>
+          <p>Bar lengths use a compressed visual scale for readability.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="news section-shell" id="news" aria-labelledby="news-title">
+      <div class="section-heading section-heading--split reveal">
+        <div><p class="eyebrow">04 / Signals</p><h2 id="news-title">News, talks &amp; <em>conversations.</em></h2></div>
+        <p>Recent milestones and public conversations around multimodal learning and self-evolving agents.</p>
+      </div>
+      <div class="news-list">
+        <article class="news-item reveal">
+          <time datetime="2026">2026</time>
+          <div><span class="news-kind">Publications</span><h3>Six ICML, five ECCV, and two EMNLP papers accepted in 2026</h3><p>A broad research slate spanning agents, generation, long-video reasoning, efficient multimodal systems, and structured visual intelligence.</p></div>
+          <span class="news-mark" aria-hidden="true">13</span>
+        </article>
+        <a class="news-item reveal" href="https://mp.weixin.qq.com/s?__biz=MjM5MTY5ODE4OQ==&amp;mid=2651634476&amp;idx=3&amp;sn=5f7f21642eebc226d316059bf4959c74" target="_blank" rel="noreferrer">
+          <time datetime="2026-07">Jul 2026</time>
+          <div><span class="news-kind">CCF SPP talk</span><h3>Controllable Text-Space Training for Self-Evolving Agents</h3><p>A public talk on making agent improvement measurable, stable, and reusable.</p></div>
+          <span class="news-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="news-item reveal" href="https://www.zhihu.com/pin/2050730898459571955" target="_blank" rel="noreferrer">
+          <time datetime="2026-06">Jun 2026</time>
+          <div><span class="news-kind">MSRA live talk</span><h3>An In-Depth Look at SkillOpt</h3><p>A technical conversation on treating agent skills as trainable parameters.</p></div>
+          <span class="news-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="news-item reveal" href="https://blog.csdn.net/BAAIBeijing/article/details/157454244" target="_blank" rel="noreferrer">
+          <time datetime="2026-01">Jan 2026</time>
+          <div><span class="news-kind">BAAI interview</span><h3>LLM2CLIP and the Frontiers of Multimodal Representation</h3><p>How language-model supervision changes what contrastive visual representations can learn.</p></div>
+          <span class="news-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="news-item reveal" href="https://zhuanlan.zhihu.com/p/1997722412821787490" target="_blank" rel="noreferrer">
+          <time datetime="2026">2026</time>
+          <div><span class="news-kind">Award coverage</span><h3>LLM2CLIP featured among the AAAI 2026 Outstanding Papers</h3><p>Coverage of the work, its representation-learning contribution, and its broader impact.</p></div>
+          <span class="news-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="about section-shell" id="about" aria-labelledby="about-title">
+      <div class="about-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">05 / About</p>
+          <h2 id="about-title">Research, built all the way <em>through.</em></h2>
+        </div>
+        <div class="about-copy reveal">
+          <p class="about-lead">I am a Senior Researcher in the Vision Computing Group at Microsoft Research Asia, based in Shanghai.</p>
+          <p>My research connects multimodal foundation models, visual content generation, and general-purpose agentic systems. I care about the full path from an idea and a clean experiment to open-source infrastructure and real-world use.</p>
+          <p>I maintain long-running collaborations with research groups at Tsinghua, Peking, Fudan, Shanghai Jiao Tong, and Tongji universities, and regularly mentor graduate researchers across institutions.</p>
+          <div class="contact-row">
+            <a href="mailto:yifyang29@gmail.com">yifyang29@gmail.com</a>
+            <a href="https://www.microsoft.com/en-us/research/people/yifanyang/" target="_blank" rel="noreferrer">Microsoft Research profile ↗</a>
+            <a href="https://scholar.google.com/citations?hl=en&amp;user=u6QK7AkAAAAJ" target="_blank" rel="noreferrer">Google Scholar ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service section-shell" id="service" aria-labelledby="service-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">06 / Academic service</p>
+        <h2 id="service-title">Contributing to the <em>research community.</em></h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-card reveal"><span>Leadership</span><h3>Area Chair</h3><p>NeurIPS · ICML · ICLR</p></article>
+        <article class="service-card reveal"><span>Leadership</span><h3>Senior PC</h3><p>AAAI</p></article>
+        <article class="service-card reveal"><span>Program committee / reviewer</span><h3>Conferences</h3><p>CVPR · ICCV · ECCV · SIGGRAPH · WAICA · BMVC · NeurIPS · ICLR · ICML · ACL · EMNLP · AISTATS · WACV</p></article>
+        <article class="service-card reveal"><span>Reviewer</span><h3>Journals</h3><p>IJCV · IEEE TMM · TMLR</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <div><strong>Yifan Yang</strong><span>Multimodal intelligence · self-evolving agents</span></div>
+    <p>© <span data-year>2026</span> Yifan Yang. Built for the open web.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
+</body>
+</html>
