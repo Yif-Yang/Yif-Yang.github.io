@@ -62,6 +62,7 @@
       <div class="nav-links" id="nav-links">
         <a href="#research">Research</a>
         <a href="#work">Work</a>
+        <a href="#foundation">Models</a>
         <a href="#news">News</a>
         <a href="#about">About</a>
         <a href="#service">Service</a>
@@ -627,10 +628,66 @@
       <p class="empty-state" data-empty-state hidden>No projects match this filter.</p>
     </section>
 
+    <section class="foundation section-shell" id="foundation" aria-labelledby="foundation-title">
+      <div class="section-heading section-heading--split reveal">
+        <div>
+          <p class="eyebrow">03 / Foundation models</p>
+          <h2 id="foundation-title">Pretraining &amp; post-training, <em>shipped.</em></h2>
+        </div>
+        <div class="section-intro">
+          <p>Alongside published research, I am a long-term contributor to Microsoft's first-party models—vision pretraining, cross-modal alignment, agentic post-training environments, and reward systems.</p>
+          <p class="legend">Work below reflects contributions to shipped models and deployed engagements. Internal details are omitted by design.</p>
+        </div>
+      </div>
+
+      <div class="fm-grid">
+        <article class="fm-card reveal">
+          <header class="fm-head">
+            <span class="fm-tag">Small language models</span>
+            <h3>Phi-3.5 Vision &amp; Phi-4-mini</h3>
+          </header>
+          <p>For <strong>Phi-3.5 Vision</strong> I contributed the visual pretraining recipe, vision encoder and positional-encoding design, dynamic-resolution training, and mixed video–image training strategies. For <strong>Phi-4-mini</strong> I contributed the full visual LoRA pretraining and post-training pipeline, together with vision-encoder pretraining and cross-modal alignment. <strong>LLM2CLIP</strong>—our AAAI 2026 Outstanding Paper—was transferred into Phi-4-mini as its visual pretraining approach.</p>
+          <ul class="fm-facts">
+            <li><b>3B</b><span>First open-weight SLM series at this scale, announced by Microsoft's CEO</span></li>
+            <li><b>~4K</b><span>Citations to the technical reports within two years</span></li>
+            <li><b>1M+</b><span>Monthly model downloads</span></li>
+          </ul>
+          <div class="fm-links">
+            <a href="https://arxiv.org/abs/2503.01743" target="_blank" rel="noreferrer">Phi-4-mini report ↗</a>
+            <a href="https://arxiv.org/abs/2404.14219" target="_blank" rel="noreferrer">Phi-3 report ↗</a>
+          </div>
+        </article>
+
+        <article class="fm-card reveal">
+          <header class="fm-head">
+            <span class="fm-tag">Agentic post-training</span>
+            <h3>Next-generation MAI models</h3>
+          </header>
+          <p>I build training environments, task suites, and reward systems for multimodal STEM, MCP tool calling, productivity documents, multi-document understanding, and deep research—then explore the matching SFT and RL recipes. A human-feedback-driven, self-evolving reward harness scores open-ended artifacts such as slides and web pages, and now serves the open-ended post-training pipeline as a preference-aligned reward model.</p>
+          <ul class="fm-benchmarks">
+            <li>BrowseComp</li><li>GAIA</li><li>SWE-bench</li><li>Terminal-Bench</li><li>τ-bench</li><li>MCP Atlas</li><li>GPQA</li><li>APEX Agents</li><li>MMLongBench-Doc</li><li>MathVision</li><li>MathVista</li>
+          </ul>
+        </article>
+
+        <article class="fm-card fm-card--feature reveal">
+          <header class="fm-head">
+            <span class="fm-tag">Sovereign deployment</span>
+            <h3>Singapore HTX: localized small models</h3>
+          </header>
+          <p>I led the customized small-model design and training in Microsoft's first strategic collaboration with the Singapore government—a <strong>US$10M</strong> engagement with the Home Team Science and Technology Agency (HTX). Coordinating a multinational engineering and product team, we built localized training and evaluation pipelines spanning multimodal capability, local knowledge, regulation, language, and public-safety requirements.</p>
+          <a class="fm-news" href="https://news.microsoft.com/en-sg/2025/05/26/htx-inks-contract-with-mistral-ai-and-microsoft-to-boost-ai-model-development-for-home-team/" target="_blank" rel="noreferrer">
+            <span class="fm-news-kind">Microsoft News · May 2025</span>
+            <strong>HTX inks contract with Mistral AI and Microsoft to boost AI model development for Home Team</strong>
+            <span class="fm-news-arrow" aria-hidden="true">↗</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
     <section class="open-source section-shell" aria-labelledby="open-source-title">
       <div class="source-panel reveal">
         <div class="source-copy">
-          <p class="eyebrow">03 / Open research</p>
+          <p class="eyebrow">04 / Open research</p>
           <h2 id="open-source-title">Ideas become more useful when people can <em>run them.</em></h2>
           <p>The public repositories linked in this portfolio have attracted <strong>18,765 GitHub stars</strong> as of August 30, 2026. The goal is not only to publish results, but to ship code, models, data, and evaluation that make the work reproducible and extensible.</p>
           <div class="source-actions">
@@ -651,7 +708,7 @@
 
     <section class="news section-shell" id="news" aria-labelledby="news-title">
       <div class="section-heading section-heading--split reveal">
-        <div><p class="eyebrow">04 / Signals</p><h2 id="news-title">News, talks &amp; <em>conversations.</em></h2></div>
+        <div><p class="eyebrow">05 / Signals</p><h2 id="news-title">News, talks &amp; <em>conversations.</em></h2></div>
         <p>Recent milestones and public conversations around multimodal learning and self-evolving agents.</p>
       </div>
       <div class="news-list">
@@ -686,7 +743,7 @@
     <section class="about section-shell" id="about" aria-labelledby="about-title">
       <div class="about-grid">
         <div class="section-heading reveal">
-          <p class="eyebrow">05 / About</p>
+          <p class="eyebrow">06 / About</p>
           <h2 id="about-title">Research, built all the way <em>through.</em></h2>
         </div>
         <div class="about-copy reveal">
@@ -704,7 +761,7 @@
 
     <section class="service section-shell" id="service" aria-labelledby="service-title">
       <div class="section-heading reveal">
-        <p class="eyebrow">06 / Academic service</p>
+        <p class="eyebrow">07 / Academic service</p>
         <h2 id="service-title">Contributing to the <em>research community.</em></h2>
       </div>
       <div class="service-grid">
